@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="502.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.controller.MainFormController">
+    <children>
+        <AnchorPane layoutY="-24.0" prefHeight="544.0" prefWidth="155.0" style="-fx-background-color: lightyellow;">
+            <children>
+                <Button fx:id="userButton" layoutX="69.0" layoutY="293.0" mnemonicParsing="false" onAction="#userAction" text="User" />
+                <Button fx:id="customerButton" layoutX="50.0" layoutY="103.0" mnemonicParsing="false" onAction="#customerAction" text="Customer" />
+                <Button fx:id="carButton" layoutX="64.0" layoutY="165.0" mnemonicParsing="false" onAction="#carAction" text="Cars" />
+                <Button fx:id="rentButton" layoutX="64.0" layoutY="232.0" mnemonicParsing="false" onAction="#rentAction" text="Rent" />
+                <Button layoutX="46.0" layoutY="45.0" mnemonicParsing="false" text="DashBoard" />
+                <Button fx:id="logoutButton" layoutX="60.0" layoutY="471.0" minWidth="46.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="31.0" prefWidth="61.0" style="-fx-background-color: red;" text="Logout">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="node" layoutX="155.0" layoutY="-5.0" prefHeight="522.0" prefWidth="680.0">
+            <children>
+                <Label layoutX="145.0" layoutY="106.0" prefHeight="56.0" prefWidth="142.0" text="This is Dashboard" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
